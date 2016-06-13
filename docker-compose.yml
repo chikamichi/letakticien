@@ -1,0 +1,8 @@
+web:
+  build: .
+  volumes:
+    - .:/home/app
+  environment:
+    - DEV_BUILD=true
+  ports:
+    - "3000:3000"
